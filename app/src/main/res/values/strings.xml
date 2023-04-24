@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ImageClassify</string>
+    <string name="Heading">Image Classify</string>
+    <string name="captureText">Capture Image</string>
+    <string name="selectText">Select Image</string>
+    <string name="predictionText">Click ME</string>
+    <string name="Result">Result :</string>
+</resources>
