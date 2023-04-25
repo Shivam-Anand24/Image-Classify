@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         captureBtn = findViewById(R.id.captureBtn);
         result = findViewById(R.id.result);
         imageView = findViewById(R.id.imageView);
-
+//
         selectBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
