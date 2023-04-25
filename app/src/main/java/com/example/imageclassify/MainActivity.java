@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -13,6 +14,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -27,6 +29,7 @@ import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,10 +38,20 @@ public class MainActivity extends AppCompatActivity {
     Bitmap bitmap;
     ImageView imageView;
 
+    TextToSpeech t1;
+
+    @SuppressLint("SuspiciousIndentation")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        t1=new TextToSpeech(this, new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int i) {
+                if (i != TextToSpeech.ERROR)
+                    t1.setLanguage(Locale.CHINESE);
+            }
+        });
 
         getPermission();
 
@@ -85,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+
                 try {
                     MobilenetV110224Quant model = MobilenetV110224Quant.newInstance(MainActivity.this);
 
@@ -104,6 +118,10 @@ public class MainActivity extends AppCompatActivity {
                     // TODO Handle the exception
 
                 }
+
+                String text=result.getText().toString();
+                t1.speak(text,TextToSpeech.QUEUE_FLUSH,null);
+
             }
 
         });
