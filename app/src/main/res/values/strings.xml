@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">ImageClassify</string>
-    <string name="Heading">Image Classify</string>
+    <string name="app_name">Sight Sense</string>
+    <string name="Heading">Sight Sense</string>
     <string name="captureText">Capture Image</string>
     <string name="selectText">Select Image</string>
     <string name="predictionText">Click ME</string>

@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onInit(int i) {
                 if (i != TextToSpeech.ERROR)
-                    t1.setLanguage(Locale.CHINESE);
+                    t1.setLanguage(Locale.US);
             }
         });
 

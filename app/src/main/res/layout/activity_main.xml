@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D028E3"
+    android:background="#53DD21"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/heading"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_marginTop="40dp"
-        android:background="#FFE01A"
+        android:layout_marginTop="80dp"
+        android:background="#ffff"
         android:fontFamily="serif-monospace"
         android:gravity="center"
         android:text="@string/Heading"
+        android:textColor="#53DD21"
         android:textSize="40sp"
         android:textStyle="bold" />
 
@@ -25,7 +26,7 @@
         android:layout_height="200dp"
         android:layout_below="@id/heading"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="70dp"
         android:background="#B82626"
         android:contentDescription="Image"
         android:rotation="0"
@@ -66,6 +67,7 @@
         android:layout_below="@id/predictBtn"
         android:layout_marginTop="35dp"
         android:fontFamily="casual"
+        android:textColor="@color/purple_700"
         android:gravity="center"
         android:text="@string/Result"
         android:textSize="30sp"
