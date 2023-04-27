@@ -3,6 +3,6 @@
     <string name="Heading">Sight Sense</string>
     <string name="captureText">Capture Image</string>
     <string name="selectText">Select Image</string>
-    <string name="predictionText">Click ME</string>
+    <string name="predictionText">Click</string>
     <string name="Result">Result :</string>
 </resources>

@@ -4,30 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#53DD21"
+    android:background="#E5B8F4"
     tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/heading"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginTop="80dp"
-        android:background="#ffff"
-        android:fontFamily="serif-monospace"
-        android:gravity="center"
-        android:text="@string/Heading"
-        android:textColor="#53DD21"
-        android:textSize="40sp"
-        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_below="@id/heading"
+        android:layout_width="297dp"
+        android:layout_height="262dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
-        android:background="#B82626"
+        android:background="#E5B8F4"
         android:contentDescription="Image"
         android:rotation="0"
         android:rotationX="0"
@@ -35,29 +21,32 @@
 
     <Button
         android:id="@+id/selectBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="81dp"
+        android:background="#2D033B"
         android:text="@string/selectText" />
 
     <Button
         android:id="@+id/captureBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/selectBtn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
+        android:background="#2D033B"
         android:text="@string/captureText" />
 
     <Button
         android:id="@+id/predictBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/captureBtn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
+        android:background="#2D033B"
         android:text="@string/predictionText" />
 
     <TextView
@@ -65,11 +54,12 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_below="@id/predictBtn"
+        android:layout_centerInParent="true"
         android:layout_marginTop="35dp"
         android:fontFamily="casual"
-        android:textColor="@color/purple_700"
         android:gravity="center"
         android:text="@string/Result"
+        android:textColor="@color/purple_700"
         android:textSize="30sp"
         android:textStyle="bold" />
 </RelativeLayout>
