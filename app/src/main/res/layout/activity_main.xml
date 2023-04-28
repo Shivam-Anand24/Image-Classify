@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/imageView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="81dp"
+        android:layout_marginTop="60dp"
         android:background="#2D033B"
         android:text="@string/selectText" />
 
@@ -56,7 +56,7 @@
         android:layout_below="@id/predictBtn"
         android:layout_centerInParent="true"
         android:layout_marginTop="35dp"
-        android:fontFamily="casual"
+        android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="@string/Result"
         android:textColor="@color/purple_700"
